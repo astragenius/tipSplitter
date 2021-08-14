@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+
+
+
+    <main class="main">
+
+       <!-- <h1>Splitter</h1> -->
+       <div class="logo">
+         <img src="/images/logo.svg" alt="logo">
+       </div>
+
+        <div class="main__container">
+
+
+              <div class="main__container__content_left">
+
+                <form class="form__container_top" action="">
+                    <label for="bill">Bill</label>
+                    <div class="label input__bill">
+                      <img src="/images/icon-dollar.svg" alt="dollar_svg">
+                    <input type="text" inputmode="numeric" name="bill" id="bill" value="142.55">
+                    </div>
+                </form>
+                <div class="label__people_container">
+                  <label for="tip">Select Tip %</label>
+                </div>
+
+                <form class="form__container_left" action="">
+
+                    <input type="button" value="5%">
+                    <input type="button" value="10%">
+                    <input type="button" class="active" value="15%">
+                    <input type="button" value="25%">
+                    <input type="button" value="50%">
+                    <input class="custom_input" type="text" placeholder="Custom">
+
+                </form>
+
+                <form class="form__container_right" action="">
+                  <div class="label__people_container">
+                    <label for="people">Number of People</label>
+                    <label class="label_error" for="people">Can't be Zero</label>
+                  </div>
+                  
+                  <div class="label input__people">
+                      <img src="/images/icon-person.svg" alt="person_svg">
+                    <input type="text"  name="people" id="people" value="0">
+                  </div>
+
+                </form>
+
+              </div>
+
+              <div class="main__container__content_right">
+
+                  <form class="content__right__form" action="">
+                    
+                    <div class="input__right_flex">
+                          <div class="input__tip_label">
+                            <p>Tip Amount <wbr><span>/ person</span></p>
+                          </div>
+                          <div class="input__tip">
+                            <div><p class="input_right">$0.00</p></div>
+                            
+                        </div>
+
+                    </div>
+                    
+                      <div class="input__right_flex">
+                                <div class="input__total_label">
+                                    <p>Total <wbr><span>/ person</span></p>
+                                  </div>
+                       
+                                <div class="input__total">
+                          
+                                    <p class="input_right">$0.00</p>
+                        
+                        
+                                </div>
+                       
+                          </div>
+
+                     
+
+                   
+                  </form>
+
+                  <button class="btn__reset">Reset</button>
+
+              </div>
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+  
+ <!--  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
