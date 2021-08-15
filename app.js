@@ -3,6 +3,8 @@
 
 
 
+    let inputBill = document.querySelector('.input__bill > input[type=text]');
+    console.log(inputBill.defaultValue)
 
 
 
@@ -82,9 +84,15 @@ function reset() {
     
     const outputTip = document.querySelector('#output_tip');
     const outputTotal = document.querySelector('#output_total');
+    let inputPerson = document.querySelector('.input__people > input[type=text]');
+    let inputBill = document.querySelector('.input__bill > input[type=text]');
     
     outputTip.textContent = "$0.00";
     outputTotal.textContent = "$0.00";
+    inputPerson.value = 1;
+    inputBill.value = 0;
+
+
     return
 
 }
