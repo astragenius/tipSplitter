@@ -19,17 +19,22 @@ function calculate (value) {
     let inputBill = document.querySelector('.input__bill > input[type=text]').value;
 
     
-    inputPerson =parseInt(inputPerson);
+    //inputPerson =parseInt(inputPerson);
     inputBill = parseInt(inputBill);
 
 
-
     //überprüfen ob im feld inputBill und im feld inputPerson ein wert ist. (if statement)
-        if (inputPerson == 0) {
-
+        if (inputPerson <= 0 || inputPerson == NaN){
             showError();
             return
         }
+        if (inputBill <= 0) {
+            reset();
+            return
+        }
+       
+
+        inputPerson = parseInt(inputPerson);
     
             // wenn nicht error function ausführen die eine warnmeldung im inputfelt anzeigt
             // is dürfen keine 0 im personen feld eingetragen werden.
@@ -122,6 +127,7 @@ function showError() {
 
     }, 2000)
    
+    return
     
 }
 
