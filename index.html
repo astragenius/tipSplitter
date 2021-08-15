@@ -43,11 +43,11 @@
 
                 <form class="form__container_left" action="">
 
-                    <input type="button" value="5%">
-                    <input type="button" value="10%">
-                    <input type="button" value="15%">
-                    <input type="button" value="25%">
-                    <input type="button" value="50%">
+                    <input type="button"onclick="calculate(5)" value="5%">
+                    <input type="button"onclick="calculate(10)" value="10%">
+                    <input type="button"onclick="calculate(15)" value="15%">
+                    <input type="button"onclick="calculate(25)" value="25%">
+                    <input type="button"onclick="calculate(50)" value="50%">
                     <input class="custom_input" type="text" placeholder="Custom">
 
                 </form>
@@ -76,7 +76,7 @@
                             <p>Tip Amount <wbr><span>/ person</span></p>
                           </div>
                           <div class="input__tip">
-                            <div><p class="input_right">$0.00</p></div>
+                            <div><p id="output_tip" class="input_right">$0.00</p></div>
                             
                         </div>
 
@@ -89,7 +89,7 @@
                        
                                 <div class="input__total">
                           
-                                    <p class="input_right">$0.00</p>
+                                    <p id="output_total" class="input_right">$0.00</p>
                         
                         
                                 </div>
