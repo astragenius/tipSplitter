@@ -3,8 +3,7 @@
 
 
 
-    let inputBill = document.querySelector('.input__bill > input[type=text]');
-    console.log(inputBill.defaultValue)
+    
 
 
 
@@ -26,6 +25,12 @@ function calculate (value) {
 
 
     //überprüfen ob im feld inputBill und im feld inputPerson ein wert ist. (if statement)
+        if (inputPerson == 0) {
+
+            showError();
+            return
+        }
+    
             // wenn nicht error function ausführen die eine warnmeldung im inputfelt anzeigt
             // is dürfen keine 0 im personen feld eingetragen werden.
 
@@ -96,5 +101,30 @@ function reset() {
     return
 
 }
+
+
+function showError() {
+
+    const label_container = document.querySelector('#error_msg');
+    const errorLabel = document.createElement('label');
+    const inputError = document.querySelector('.input__people')
+    errorLabel.setAttribute('class', 'label_error');
+    errorLabel.setAttribute('for', 'people');
+    errorLabel.textContent = "Cant't be Zero";
+
+    label_container.insertAdjacentElement('beforeend', errorLabel);
+    inputError.classList.toggle('label_active')
+    
+    setTimeout(function(){
+
+        inputError.classList.toggle('label_active');
+        errorLabel.remove();
+
+    }, 2000)
+   
+    
+}
+
+
 
 
