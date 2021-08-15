@@ -148,7 +148,7 @@ input:focus {
  /* ------------  MAIN CONTENT SECTION -------------- */
 .main {
 
-    height: 100vh;
+    height: 98vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -223,6 +223,12 @@ input:focus {
     transition: 300ms ease;
 }
 
+.form__container_left > input:active, .form__container_left > input:focus {
+
+    background-color: var(--strong-cyan);
+    color: var(--very_dark_cyan);
+}
+
 
 
 .form__container_left > input[value] {
@@ -231,12 +237,7 @@ input:focus {
     font-size: 2.4rem;
 }
 
-.form__container_left .active {
 
-    background-color: var(--strong-cyan);
-    color: var(--very_dark_cyan);
-
-}
 
 input::placeholder {
 
@@ -328,6 +329,15 @@ span {
 }
 
 
+.attribution { 
+     font-size: 15px;
+     text-align: center; 
+    
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
 
 
 
@@ -346,14 +356,14 @@ span {
 
     .logo {
 
-        margin-top: 27rem;
+        margin-top: 10rem;
         margin-bottom: 5rem;
     }
 
     .main {
 
         width: 41.4rem;
-        height: 100vh;
+        height: 160vh;
     }
 
 
@@ -442,6 +452,17 @@ span {
     }
     
 
+    .attribution {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+
     
 }
 
@@ -491,5 +512,7 @@ span {
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+.
