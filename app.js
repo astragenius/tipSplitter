@@ -7,6 +7,8 @@
 
 
 
+
+
 function calculate (value) {
 
    
@@ -71,4 +73,20 @@ function showTotal(total) {
     return outputTotal.textContent = "$" + total.toFixed(2);
     
 }
+
+
+
+
+
+function reset() {
+    
+    const outputTip = document.querySelector('#output_tip');
+    const outputTotal = document.querySelector('#output_total');
+    
+    outputTip.textContent = "$0.00";
+    outputTotal.textContent = "$0.00";
+    return
+
+}
+
 
